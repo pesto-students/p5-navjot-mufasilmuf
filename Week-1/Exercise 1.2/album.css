@@ -17,7 +17,7 @@ main {
 }
 
 .navBar ul {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,4 +80,34 @@ table tr td:last-child span {
     border: 1px solid black;
     padding: 1px;
     color: blue;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005c99;
+    height: 14.9vh;
+    padding: 10px;
+    color: white;
+}
+
+.footer img {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.footer-thumbnail {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-thumbnail article p:last-child {
+    margin-top: 17px;
+}
+
+.footer ul li:not(:last-child) {
+    margin-right: 120px;
 }
