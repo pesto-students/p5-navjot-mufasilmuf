@@ -7,7 +7,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.container {
+main {
     display: flex;
 }
 
@@ -26,4 +26,34 @@
 
 .navBar ul li {
     cursor: pointer;
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    background-color: #333333;
+    padding: 30px;
+    display: flex;
+    color: white;
+}
+
+header img {
+    margin-right: 30px;
+}
+
+.album_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header_options ul li {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.header_options ul li span {
+    margin-left: 5px;
 }
