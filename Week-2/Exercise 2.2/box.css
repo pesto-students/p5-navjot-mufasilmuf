@@ -1,0 +1,64 @@
+.main {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 15% auto 0 auto;
+}
+
+.main h1 {
+    position: absolute;
+    top: 60px;
+    left: 87px;
+}
+
+.redCard {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.yellowCard {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.blueCard {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.greenCard {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.redCard,
+.yellowCard,
+.blueCard,
+.greenCard {
+    z-index: 1;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.main:hover .redCard {
+    transform: translateX(-100px) rotate(90deg);
+}
+
+.main:hover .blueCard {
+    transform: translateX(-100px) rotate(-90deg);
+}
+
+.main:hover .yellowCard {
+    transform: translateX(100px) rotate(-90deg);
+}
+
+.main:hover .greenCard {
+    transform: translateX(100px) rotate(90deg);
+}
