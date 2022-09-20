@@ -1,0 +1,32 @@
+const myDisplay = async () => {
+    let async1 = new Promise(function (resolve) {
+        setTimeout(function () { resolve("First"); }, 1000);
+    });
+    let async2 = new Promise(function (resolve) {
+        setTimeout(function () { resolve("Second"); }, 2000);
+    });
+    let async3 = new Promise(function (resolve) {
+        setTimeout(function () { resolve("Third"); }, 3000);
+    });
+
+    var firstFn = await async1;
+    console.log(firstFn);
+    var secondFn = await async2;
+    console.log(secondFn);
+    var thirdFn = await async3;
+    console.log(thirdFn);
+
+}
+
+
+function* genfn() {
+    yield 'this is First';
+    yield 'this is Second';
+    yield 'this is Third';
+}
+
+const generatorObj = genfn();
+
+console.log(generatorObj.next());
+console.log(generatorObj.next());
+console.log(generatorObj.next());
