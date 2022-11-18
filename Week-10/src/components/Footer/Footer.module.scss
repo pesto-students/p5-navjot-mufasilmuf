@@ -1,0 +1,37 @@
+.footer{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding: 10px;
+
+
+    ul{
+        list-style: none;
+        padding: 0 50px;
+
+        .category_heading{
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        li{
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media(max-width:555px) {
+   .footer{
+        display: grid;
+        grid-template-columns: auto auto;
+        position: static;
+        margin-top: 40px;
+       
+        ul{
+            padding: 15px 25px;
+        }
+   }
+}

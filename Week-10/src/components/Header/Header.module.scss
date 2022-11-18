@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #fff;
+
+    ul{
+        display: flex;
+        color: #26529d;
+        font-weight: 500;
+        li{
+            list-style: none;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+    }
+
+    .btn_group{
+        color: #26529d;
+        font-weight: 500;
+        span{
+            margin-left: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media(max-width:767.98px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0;
+        font-size: 14px;
+
+        ul,.btn_group{
+            margin-top: 5px;
+        }
+    }
+}

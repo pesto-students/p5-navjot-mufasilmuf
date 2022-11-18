@@ -1,0 +1,23 @@
+.messageCard{
+    text-align: center;
+    font-size: 24px;
+
+    button{
+        background-color: #2bcfce;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:767.98px){
+    .messageCard{
+        img{
+            width: 100%;
+        }
+    }
+}
