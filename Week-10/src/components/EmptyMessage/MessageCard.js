@@ -15,4 +15,4 @@ const MessageCard = ({ message }) => {
     )
 }
 
-export default MessageCard;
+export default React.memo(MessageCard);

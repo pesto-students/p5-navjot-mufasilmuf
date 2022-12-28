@@ -32,4 +32,4 @@ const ListCard = ({ data: { shortendUrl, url } }) => {
     )
 }
 
-export default ListCard;
+export default React.memo(ListCard);

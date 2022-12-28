@@ -38,4 +38,4 @@ const Shorter = () => {
     )
 }
 
-export default Shorter;
+export default React.memo(Shorter);
